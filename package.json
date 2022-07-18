@@ -49,7 +49,6 @@
         "lint": "eslint **",
         "clear": "rm -rf .cache",
         "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-	      "start": "npm run build"
     },
     "devDependencies": {
         "browser-monads": "^1.0.0",
