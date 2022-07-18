@@ -18,15 +18,25 @@ id: 1
 
 <exercise id="2" title="Test Your Knowledge">
 
-Q1 - Let's ask some questions about the slides. Whats the correct answer?
+```
+var1 = ["A", "B", "C", "D", "E"]
+var2 = [1, 2, 3, 4, 5]
+idx = 0
+out = {}
+for el in var1:
+    out[el] = var2[idx]
+    idx = idx + 1
+```
+
+Q1 - How can the code snippet be improved?
 <choice>
-<opt text="Answer one">
+<opt text="The code looks correct.">
 This is not the correct answer.
 </opt>
-<opt text="Answer two" correct="true">
+<opt text="Use enumerate() and zip() and a list comprehension." correct="true">
 Good job!
 </opt>
-<opt text="Answer three">
+<opt text="Use a list comprehension">
 This is not correct either.
 </opt>
 </choice>
