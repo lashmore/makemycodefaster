@@ -4,7 +4,7 @@
     "slogan": "The code doctor",
     "description": "This course will teach you to write better, faster code.",
     "bio": "Hello! My name is Lillian Thistlethwaite and I am a Senior Data Scientist at a small start-up in the government contracting Strategic Communications space. I do a lot of NLP and general engineering work. For more about me, check out my data science blog, Brainy, etc.",
-    "siteUrl": "https://heroku.makemycodefaster.com/",
+    "siteUrl": "https://makemycodefaster.herokuapp.com/",
     "twitter": "brainy_etc",
     "fonts": "IBM+Plex+Mono:500|IBM+Plex+Sans:700|Lato:400,400i,700,700i",
     "testTemplate": "from wasabi import Printer\n__msg__ = Printer()\n__solution__ = \"\"\"${solution}\"\"\"\n\n${solution}\n\n${test}\n\ntry:\n    test()\nexcept AssertionError as e:\n    __msg__.fail(e)",
