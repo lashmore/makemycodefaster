@@ -1,29 +1,15 @@
 {
-<<<<<<< HEAD
     "courseId": "make-my-code-faster",
     "title": "Make My Code Faster",
     "slogan": "The code doctor",
     "description": "This course will teach you to write better, faster code.",
     "bio": "Hello! My name is Lillian Thistlethwaite and I am a Senior Data Scientist at a small start-up in the government contracting Strategic Communications space. I do a lot of NLP and general engineering work. For more about me, check out my data science blog, Brainy, etc.",
-    "siteUrl": "https://makemycodefaster.com/",
+    "siteUrl": "https://heroku.makemycodefaster.com/",
     "twitter": "brainy_etc",
     "fonts": "IBM+Plex+Mono:500|IBM+Plex+Sans:700|Lato:400,400i,700,700i",
     "testTemplate": "from wasabi import Printer\n__msg__ = Printer()\n__solution__ = \"\"\"${solution}\"\"\"\n\n${solution}\n\n${test}\n\ntry:\n    test()\nexcept AssertionError as e:\n    __msg__.fail(e)",
     "juniper": {
         "repo": "lashmore/makemycodefaster",
-=======
-    "courseId": "course-starter-python",
-    "title": "My cool online course",
-    "slogan": "A free online course",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique libero at est congue, sed vestibulum tortor laoreet. Aenean egestas massa non commodo consequat. Curabitur faucibus, sapien vitae euismod imperdiet, arcu erat semper urna, in accumsan sapien dui ac mi. Pellentesque felis lorem, semper nec velit nec, consectetur placerat enim.",
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique libero at est congue, sed vestibulum tortor laoreet. Aenean egestas massa non commodo consequat. Curabitur faucibus, sapien vitae euismod imperdiet, arcu erat semper urna.",
-    "siteUrl": "https://course-starter-python.netlify.com",
-    "twitter": "spacy_io",
-    "fonts": "IBM+Plex+Mono:500|IBM+Plex+Sans:700|Lato:400,400i,700,700i",
-    "testTemplate": "from wasabi import Printer\n__msg__ = Printer()\n__solution__ = \"\"\"${solution}\"\"\"\n\n${solution}\n\n${test}\n\ntry:\n    test()\nexcept AssertionError as e:\n    __msg__.fail(e)",
-    "juniper": {
-        "repo": "ines/course-starter-python",
->>>>>>> d69b69dd (Initial commit)
         "branch": "binder",
         "lang": "python",
         "kernelType": "python3",
@@ -31,13 +17,8 @@
     },
     "showProfileImage": true,
     "footerLinks": [
-<<<<<<< HEAD
-        { "text": "Website", "url": "https://brainy-etc.com" },
+        { "text": "Website", "url": "https://lthistlethwaite-prnt.gitlab.io/brainy-etc/" },
         { "text": "Source", "url": "https://github.com/lashmore/makemycodefaster" },
-=======
-        { "text": "Website", "url": "https://spacy.io" },
-        { "text": "Source", "url": "https://github.com/ines/course-starter-python" },
->>>>>>> d69b69dd (Initial commit)
         { "text": "Built with ♥", "url": "https://github.com/ines/course-starter-python" }
     ],
     "theme": "#de7878"

@@ -19,7 +19,6 @@ export default ({ data }) => {
             <Logo className={classes.logo} aria-label={siteMetadata.title} />
 
             <section>
-<<<<<<< HEAD
                 <h1 className={classes.subtitle}> CODE SLOW? WE GOT YOU! </h1>
                 <div className={classes.introduction}>
                 <p>
@@ -29,17 +28,6 @@ export default ({ data }) => {
                 </p>
                 </div>
             </section>
-
-=======
-                <h1 className={classes.subtitle}> INSERT CATCHY TAG LINE HERE </h1>
-                <div className={classes.introduction}>
-                <p>
-                    This is a good place to write what your course is about!  Dinosaurs? Neural Networks? LSTM? How to do taxes and not get bored? Write it here!   
-                </p>
-                </div>
-            </section>
-            
->>>>>>> d69b69dd (Initial commit)
             {chapters.map(({ slug, title, description }) => (
                 <section key={slug} className={classes.chapter}>
                     <h2 className={classes.chapterTitle}>

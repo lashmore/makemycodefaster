@@ -1,23 +1,12 @@
 {
-<<<<<<< HEAD
     "name": "makemycodefaster",
     "private": true,
     "description": "Learning course to help write better, faster, Pythonic code",
     "version": "0.0.1",
     "author": "Lillian Thistlethwaite",
-<<<<<<< HEAD
-=======
     "engines": {
       "node": "10.24.1"
     },
-=======
-    "name": "course-starter-python",
-    "private": true,
-    "description": "Starter package to build interactive Python courses",
-    "version": "0.0.1",
-    "author": "Ines Montani <ines@explosion.ai>",
->>>>>>> d69b69dd (Initial commit)
->>>>>>> b1d6dfdd (Initial commit)
     "dependencies": {
         "@illinois/react-use-local-storage": "^1.1.0",
         "@jupyterlab/outputarea": "^0.19.1",
@@ -58,16 +47,8 @@
         "dev": "gatsby develop",
         "lint": "eslint **",
         "clear": "rm -rf .cache",
-<<<<<<< HEAD
         "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-<<<<<<< HEAD
 	"start": "npm run dev"
-=======
-        "start": "npm run dev"
-=======
-        "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
->>>>>>> d69b69dd (Initial commit)
->>>>>>> b1d6dfdd (Initial commit)
     },
     "devDependencies": {
         "browser-monads": "^1.0.0",
@@ -75,10 +56,6 @@
     },
     "repository": {
         "type": "git",
-<<<<<<< HEAD
         "url": "https://github.com/lashmore/makemycodefaster"
-=======
-        "url": "https://github.com/ines/course-starter-python"
->>>>>>> d69b69dd (Initial commit)
     }
 }

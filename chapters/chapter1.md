@@ -1,34 +1,21 @@
 ---
-<<<<<<< HEAD
 title: 'Chapter 1: The Pythonic Way'
 description:
   'This chapter will teach you best practices for writing code in Python.'
-=======
-title: 'Chapter 1: Getting started'
-description:
-  'This chapter will teach you about many cool things and introduce you to the
-  most important concepts of the course.'
->>>>>>> d69b69dd (Initial commit)
 prev: null
 next: /chapter2
 type: chapter
 id: 1
 ---
 
-<<<<<<< HEAD
 <exercise id="1" title="The Pythonic Way" type="slides">
 
 <slides source="chapter1_01_pythonic_way">
-=======
-<exercise id="1" title="Introduction" type="slides">
 
-<slides source="chapter1_01_introduction">
->>>>>>> d69b69dd (Initial commit)
 </slides>
 
 </exercise>
 
-<<<<<<< HEAD
 <exercise id="2" title="Test Your Knowledge">
 
 Q1 - Let's ask some questions about the slides. Whats the correct answer?
@@ -68,40 +55,12 @@ Good job!
 </opt>
 <opt text="C">
 This is not correct either.
-=======
-<exercise id="2" title="Getting Started">
-
-Let's ask some questions about the slides. Whats the correct answer?
-
-<choice>
-<opt text="Answer one">
-
-This is not the correct answer.
-
-</opt>
-
-<opt text="Answer two" correct="true">
-
-Good job!
-
-</opt>
-
-<opt text="Answer three">
-
-This is not correct either.
-
->>>>>>> d69b69dd (Initial commit)
 </opt>
 </choice>
 
 </exercise>
 
-<<<<<<< HEAD
 <exercise id="3" title="Practice, Practice, Practice!">
-=======
-<exercise id="3" title="First steps">
->>>>>>> d69b69dd (Initial commit)
-
 This is a code exercise. The content can be formatted in simple Markdown – so
 you can have **bold text**, `code` or [links](https://spacy.io) or lists, like
 the one for the instructions below.
