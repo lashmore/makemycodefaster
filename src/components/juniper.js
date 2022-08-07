@@ -1,11 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import CodeMirror from 'codemirror'
-import { Widget } from '@phosphor/widgets'
 import { Kernel, ServerConnection } from '@jupyterlab/services'
 import { OutputArea, OutputAreaModel } from '@jupyterlab/outputarea'
 import { RenderMimeRegistry, standardRendererFactories } from '@jupyterlab/rendermime'
 import { window } from 'browser-monads'
+import { Widget } from '@phosphor/widgets'
+import * as myTheme from '../styles/code.module.sass'
+
+console.log(myTheme)
 
 class Juniper extends React.Component {
     outputRef = null
@@ -79,6 +82,8 @@ class Juniper extends React.Component {
             theme: this.props.theme,
         })
         this.setState({ cm })
+        console.log(cm)
+        console.log(this.props.theme)
 
         const runCode = wrapper => {
             const value = cm.getValue()
@@ -86,6 +91,8 @@ class Juniper extends React.Component {
         }
         const setValue = value => cm.setValue(value)
         cm.setOption('extraKeys', { 'Shift-Enter': runCode })
+        console.log(Widget)
+        console.log(outputArea)
         Widget.attach(outputArea, this.outputRef)
         this.setState({ runCode, setValue })
     }
@@ -112,8 +119,10 @@ class Juniper extends React.Component {
     requestBinder(repo, branch, url) {
         const binderUrl = `${url}/build/gh/${repo}/${branch}`
         this.log(() => console.info('building', { binderUrl }))
+        console.log(binderUrl)
         return new Promise((resolve, reject) => {
             const es = new EventSource(binderUrl)
+            console.log(es)
             es.onerror = err => {
                 es.close()
                 this.log(() => console.error('failed'))

@@ -1,13 +1,54 @@
 import React, { useState } from 'react'
 import { graphql, navigate } from 'gatsby'
-import useLocalStorage from '@illinois/react-use-local-storage'
-
 import { renderAst } from '../markdown'
 import { ChapterContext } from '../context'
 import Layout from '../components/layout'
 import { Button } from '../components/button'
+import * as classes from '../styles/chapter.module.sass'
 
-import classes from '../styles/chapter.module.sass'
+const react_1 = require("react");
+const isClient = typeof window !== 'undefined';
+const useLocalStorage = (key, initialValue) => {
+    if (!isClient) {
+        // We're SSRing; can't use local storage here!
+        return [initialValue, () => { }];
+    }
+    const [state, updateState] = react_1.useState(() => {
+        try {
+            const localStorageValue = window.localStorage.getItem(key);
+            if (localStorageValue === null) {
+                // Initialize local storage with default state
+                window.localStorage.setItem(key, JSON.stringify(initialValue));
+                return initialValue;
+            }
+            else {
+                return JSON.parse(localStorageValue);
+            }
+        }
+        catch (_a) {
+            // User might be facing storage restrictions, or JSON
+            // serialization/deserialization may have failed. We can just fall back
+            // to using React state here.
+            return initialValue;
+        }
+    });
+    const localStorageChanged = (e) => {
+        if (e.key === key) {
+            updateState(JSON.parse(e.newValue));
+        }
+    };
+    const setState = react_1.useCallback((value) => {
+        window.localStorage.setItem(key, JSON.stringify(value));
+        updateState(value);
+    }, [key, updateState]);
+    react_1.useEffect(() => {
+        window.addEventListener('storage', localStorageChanged);
+        return () => {
+            window.removeEventListener('storage', localStorageChanged);
+        };
+    });
+    return [state, setState];
+};
 
 const Template = ({ data }) => {
     const { markdownRemark, site } = data

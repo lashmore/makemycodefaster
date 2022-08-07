@@ -135,11 +135,10 @@ pre, code
     line-height: var(--line-height)
 
 pre
-    margin-bottom: 3rem
+    margin-bottom: 0rem
 
 pre code
-    display: block
-    padding: 2rem !important
+    padding: 0rem !important
 
 /* Syntax highlighting */
 
@@ -152,6 +151,15 @@ pre code
 
     .CodeMirror-line
         padding: 0
+
+    .CodeMirror-lines
+        padding: 0
+
+    .CodeMirror-measure
+        display: none
+
+    .CodeMirror-vscrollbar
+       display: none !important
 
     .CodeMirror-selected
         background: var(--syntax-selected-background)

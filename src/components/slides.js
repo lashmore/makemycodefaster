@@ -1,10 +1,11 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import Marked from 'reveal.js/plugin/markdown/marked.js'
+import * as Marked from 'marked'
+import * as RevealMarkdown from 'reveal.js/plugin/markdown/markdown.js'
 import classNames from 'classnames'
 
 import '../styles/reveal.css'
-import classes from '../styles/slides.module.sass'
+import * as classes from '../styles/slides.module.sass'
 
 function getFiles({ allMarkdownRemark }) {
     return Object.assign(
@@ -26,18 +27,16 @@ class Slides extends React.Component {
         import('reveal.js').then(({ default: Reveal }) => {
             window.Reveal = Reveal
             window.marked = Marked
-            import('reveal.js/plugin/markdown/markdown.js').then(({ RevealMarkdown }) => {
-                RevealMarkdown.init()
-                Reveal.initialize({
-                    center: false,
-                    progress: false,
-                    showNotes: true,
-                    controls: true,
-                    width: '100%',
-                    height: 600,
-                    minScale: 0.75,
-                    maxScale: 1,
-                })
+            Reveal.initialize({
+                center: false,
+                progress: false,
+                showNotes: true,
+                controls: true,
+                width: '100%',
+                height: 600,
+                minScale: 0.75,
+                maxScale: 1,
+                plugins: [ RevealMarkdown ]
             })
         })
     }
